@@ -1,0 +1,234 @@
+html {
+    background: #F7F5F5 url(/images/paper.gif) repeat;
+}
+body {
+    font-family: "helvetica neue", arial, sans-serif;
+    font-size: 13px;
+    color: #444;
+}
+a {
+    color: #221919;
+    text-decoration: none;
+    outline: none;
+}
+img {
+    border: 0;
+}
+li {
+    list-style: none;
+}
+#page {
+    color: #444;
+    font-size: 14px;
+}
+h1,
+h2,
+h3,
+#nav,
+#nav li a {
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+#main {
+    width: 1000px;
+    padding-left: 30px;
+    margin: 60px auto;
+}
+#main h2 {
+    padding: 0;
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    text-shadow: 0 1px rgba(255, 255, 255, .9);
+    border-bottom: 1px solid #ededed;
+}
+.box {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 60px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(34, 25, 25, .4);
+}
+.setting-units {
+    padding: 0 26px;
+    color: #8C7E7E;
+}
+.setting-unit {
+    position: relative;
+    border-bottom: 1px solid rgba(34, 25, 25, .1);
+    border-top: 1px solid rgba(255, 255, 255, .7);
+}
+.setting-unit .line {
+    line-height: 60px;
+    height: 60px;
+    padding-left: 20px;
+    color: #333;
+    font-size: 14px;
+}
+.setting-unit label.title {
+    display: inline-block;
+    width: 180px;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 18px;
+}
+.setting-unit a:hover {
+    color: #9A0000;
+    text-decoration: underline;
+}
+input[name=minWidth] {
+    height: 12px;
+}
+#authorization {
+    display: none;
+    line-height: 26px;
+}
+#authorization a.icon {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 10px;
+    line-height: 22px;
+}
+#authorization img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CCC;
+}
+#authorization span.removeAuth {
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    background-image: url(/images/sign_out_20.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    float: right;
+}
+#authorization span.removeAuth:hover {
+    display: inline;
+    background-position: 0 -20px;
+}
+#authorization span.removeAuth:active {
+    display: inline;
+    background-position: 0 -20px;
+}
+#format_setting #jpegSelector {
+    margin-left: 20px;
+}
+#shortcut_setting .holder {
+    display: none;
+    background: #fcfcfc;
+    overflow: hidden;
+    position: relative;
+    padding-left: 230px;
+    border-top: 1px dashed rgba(34, 25, 25, .1);
+}
+#shortcut_setting .holder .hotkey {
+    font-size: 14px;
+    line-height: 32px;
+    width: 400px;
+    display: inline-block;
+}
+#shortcut_setting .holder .hotkey label {
+    display: inline-block;
+    width: 50%;
+}
+#huaban_logo {
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+    margin-left: -55px;
+}
+.txt {
+    width: 36px;
+    height: 24px;
+    padding-left: 6px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: #fafafa;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+h2 small {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    color: #ff6161;
+    font-weight: normal;
+    font-size: 12px;
+}
+.timing-plan {
+    border-top: 3px solid rgba(34, 25, 25, .1);
+}
+.timing-plan button {
+    padding: 5px 12px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+.timing-plan button:hover {
+    background: #fafafa;
+}
+#editPlanWrap dl,
+#showPlanWrap dl {
+    display: table;
+}
+#editPlanWrap dl input[type=text] {
+    width: 36px;
+    height: 24px;
+    padding-left: 6px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    background: #fafafa;
+}
+#editPlanWrap dl dt,
+.editPlanWrap dl dd,
+#showPlanWrap dl dt,
+.showPlanWrap dl dd {
+    display: table-cell;
+    vertical-align: top;
+}
+#editPlanWrap dl dt,
+#showPlanWrap dl dt {
+    width: 180px;
+    text-align: right;
+    padding-left: 20px;
+}
+#editPlanWrap dl dt #planName {
+    width: 172px;
+}
+#editPlanWrap dl dd,
+#showPlanWrap dl dd {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+#editPlanWrap dl dd div.l2,
+#editPlanWrap dl dd div.l2-2,
+#editPlanWrap dl dd div.l3 {
+    min-height: 29px;
+    line-height: 28px;
+    margin-top: 15px;
+}
+#editPlanWrap dl dd #date input {
+    width: 21px;
+}
+#showPlanWrap dl dd span {
+    margin-right: 30px;
+}
+#showPlanWrap dl i {
+    font-style: normal;
+}
+#btn-delAll {
+    display: none;
+}
+.btn-del {
+    margin-left: 10px;
+}

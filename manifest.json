@@ -1,0 +1,29 @@
+{
+    "background": {
+        "page": "background.html"
+    },
+    "browser_action": {
+        "default_icon": "images/logo_48.png",
+        "default_popup": "popup.html",
+        "default_title": "倍效采集工具"
+    },
+    "content_scripts": [ {
+        "js": [ "js/jquery.min.js" , "js/page.js" ],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "run_at": "document_end"
+    } ],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "description": "这个扩展程序可以让你方便地从指定的网站采集所需要的信息。",
+    "icons": {
+        "128": "images/logo_128.png",
+        "16": "images/logo_16.png",
+        "48": "images/logo_48.png"
+    },
+    "manifest_version": 2,
+    "minimum_chrome_version": "26",
+    "name": "倍效网页信息采集工具",
+    "options_page": "preferences.html",
+    "permissions": [ "contextMenus", "tabs", "cookies", "notifications", "storage", "http://*/*", "https://*/*", "activeTab", "\u003Call_urls\u003e" ],
+    "version": "1.0.4.0",
+    "web_accessible_resources": [ ]
+}
